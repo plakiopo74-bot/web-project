@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        input, select {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        section {
+            padding: 2rem;
+            margin: 1rem 0;
+        }
+        #about {
+            background-color: #f4f4f4;
+        }
+        #courses {
+            background-color: #e9e9e9;
+        }
+        #contact {
+            background-color: #f4f4f4;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our School</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Our School</h2>
+        <p>Our school is dedicated to providing a nurturing environment for students to learn and grow. We offer a wide range of educational programs designed to prepare students for success in life.</p>
+        <p>Founded in [Year], our institution has a rich history of academic excellence and community involvement.</p>
+    </section>
+
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <ul>
+            <li>Mathematics</li>
+            <li>Science</li>
+            <li>English Literature</li>
+            <li>History</li>
+            <li>Physical Education</li>
+            <li>Arts and Crafts</li>
+        </ul>
+    </section>
+
+    <section id="admission">
+        <h2>Admission</h2>
+        <p>To apply for admission to our school, please fill out the form below. We accept applications for grades K-12.</p>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="grade">Grade Applying For:</label>
+            <select id="grade" name="grade" required>
+                <option value="">Select Grade</option>
+                <option value="K">Kindergarten</option>
+                <option value="1">1st Grade</option>
+                <option value="2">2nd Grade</option>
+                <option value="3">3rd Grade</option>
+                <option value="4">4th Grade</option>
+                <option value="5">5th Grade</option>
+                <option value="6">6th Grade</option>
+                <option value="7">7th Grade</option>
+                <option value="8">8th Grade</option>
+                <option value="9">9th Grade</option>
+                <option value="10">10th Grade</option>
+                <option value="11">11th Grade</option>
+                <option value="12">12th Grade</option>
+            </select>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+
+    <section id="registration">
+        <h2>Registration</h2>
+        <p>Register for courses or events at our school. Select the course you wish to register for.</p>
+        <form action="#" method="post">
+            <label for="reg-name">Full Name:</label>
+            <input type="text" id="reg-name" name="reg-name" required>
+
+            <label for="reg-email">Email:</label>
+            <input type="email" id="reg-email" name="reg-email" required>
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select Course</option>
+                <option value="math">Mathematics</option>
+                <option value="science">Science</option>
+                <option value="english">English Literature</option>
+                <option value="history">History</option>
+                <option value="pe">Physical Education</option>
+                <option value="arts">Arts and Crafts</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Address: 123 School Street, City, State, ZIP Code</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@ourschool.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Our School. All rights reserved.</p>
+    </footer>
+</body>
+</html>
